@@ -42,3 +42,18 @@ match.appendChild(newElem);
 // först leta reda på barnelementet
 let childToRemove = document.querySelector("p");
 match.removeChild(childToRemove);
+
+// hitta knappen
+let btnElem = document.querySelector('button');
+// lägga på en eventlyssnare som lyssnar efter ett klick
+btnElem.addEventListener("click", function(event) {
+    console.log(event.target);
+    let listElem = document.querySelector("ul");
+
+    for (let i = 0; i < 2; i++) {
+        // skapa nytt listItem
+        let listItem = document.createElement("li");
+        listItem.innerHTML = i;
+        listElem.appendChild(listItem);
+    }
+});
