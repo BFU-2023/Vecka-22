@@ -1,0 +1,18 @@
+/* '#' för id */
+#top-bar {
+    background-color: hotpink;
+    color: white;
+}
+/* '.' för klassnamn */
+.my-section {
+    background-color: teal;
+}
+
+/* bara taggnamn för tagg */
+p {
+    color: white;
+}
+
+.my-article {
+    background-color: aqua;
+}
